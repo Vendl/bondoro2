@@ -1,0 +1,14 @@
+{% extends "posts/base.html" %}
+{% load static %}
+{% block body_block %}
+<h1 class="sponsor">Főbb támogatóink:</h1>
+<div class="jumbotron">
+<div class="row" id="tamogatolist">
+{% for tamogato in tamogatok %}
+<div class="col-lg-3" id="tamogatokep">
+<img src="{{ tamogato.SponsorPic.url }}" height=90 width=auto>
+</div>
+{% endfor %}
+</div>
+</div>
+{% endblock %}

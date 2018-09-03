@@ -1,0 +1,41 @@
+{% extends "posts/base.html" %}
+{% load static %}
+{% block body_block %}
+<h1>Kapcsolat</h1>
+    <div id="map"></div>
+    <script>
+// Initiapze and add the map
+function initMap() {
+  // The location of Uluru
+  var Bondoro = {lat: 46.954673, lng: 17.606290};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: Bondoro});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: Bondoro, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaf16XiES-cC93A8OegHl8H7naUdTTslg&callback=initMap">
+    </script>
+
+<h3 class="contactinfo">Elérhetőségek:</h3>
+  <p>Cím:</p>
+  <p>Telefonszám:</p>
+  <p>Email:</p>
+
+
+<h3>Szervező:</h3>
+<h4 id="viprodukcio">Viprodukció</h4>
+<div class="viprodukcio">
+<p>Honlap: http://www.viprodukcio.hu/ </p>
+<p>Telefonszám: +36 30 937 1854</p>
+<p>E-mail: viprodukcio@viprodukcio.hu</p>
+</div>
+
+{% endblock %}

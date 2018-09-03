@@ -1,0 +1,176 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+      font-family: 'Mukta', sans-serif;
+
+      color: #111111;
+}
+
+a{
+  color: #111111;
+}
+a:visited {
+    color: #111111;
+}
+
+/* mouse over link */
+a:hover {
+    color: #111112;
+}
+
+/* selected link */
+a:active {
+    color: #111111;
+}
+
+
+#body{
+  position: relative;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+
+.nav a{
+  font-size: 22px !important;
+  color: #111111;
+}
+
+.nav-item{
+  padding-top: 6%;
+  padding-bottom: 2%;
+}
+
+footer{
+  position:absolute;
+  width: 100%;
+}
+
+#indexfooter{
+  position:absolute;
+  bottom: 0;
+}
+
+.footer{
+  width: 54%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr{
+  border-color: black;
+}
+#social{
+  padding-bottom: 2%
+}
+.sliderdiv{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -2%;
+}
+
+#program{
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+#programok{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.title{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 36px;
+}
+
+
+.hirkep{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hirszoveg{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.aboutcim{
+  margin-bottom: 5%;
+}
+
+.aboutcontainer{
+  padding-top: 5%;
+  width: 100%;
+  padding-bottom: 10%;
+}
+
+.programTitle{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#hosstkat{
+  line-height: 10px;
+  text-align: right;
+}
+
+#locat{
+  text-align: center;
+}
+
+.programszoveg{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#tamogatolist{
+  padding-top: 5%;
+}
+
+#tamogatokep{
+  margin: auto;
+  padding-bottom: 5%;
+}
+
+#map {
+   width: 100%;
+   height: 400px;
+   background-color: grey;
+}
+
+
+.contactinfo{
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.sponsor{
+  padding-bottom: 5%;
+}
+
+.jumbotron{
+  margin-bottom: -5%;
+}
+.viprodukcio{
+  line-height: 10px;
+  font-style: italic;
+}
+
+#viprodukcio{
+  font-weight: bold;
+}

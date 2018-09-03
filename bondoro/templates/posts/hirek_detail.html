@@ -1,0 +1,20 @@
+hir{% extends "posts/base.html" %}
+{% load static %}
+{% block body_block %}
+<img  class="rounded mx-auto d-block" width=800 height=auto src="{{hir.NewsPic.url}}">
+<div class="">
+  <br>
+  <br>
+</div>
+<h1 id="programTitle">{{ hir.Title }}</h1>
+<div class="row">
+<div class="col-lg-4">
+<h3>{{ hir.Date }}</h3>
+</div>
+<div class="col-lg-4">
+</div>
+<div class="col-lg-4" id="hosstkat">
+</div>
+</div>
+<p class="programszoveg">{{ hir.Description }} {{ hir.Description }} {{ hir.Description }} {{ hir.Description }} {{ program.Description }}</p>
+{% endblock %}

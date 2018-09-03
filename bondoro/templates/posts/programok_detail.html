@@ -1,0 +1,23 @@
+{% extends "posts/base.html" %}
+{% load static %}
+{% block body_block %}
+<img  class="rounded mx-auto d-block" src="{{program.EventPic.url}}">
+<div class="">
+  <br>
+  <br>
+</div>
+<h1 id="programTitle">{{ program.Title }}</h1>
+<div class="row">
+<div class="col-lg-4">
+<h3>{{ program.Date }}</h3>
+</div>
+<div class="col-lg-4">
+<p id="locat"> <img src="{% static 'posts/pin.svg' %}" width=20 height=auto> {{ program.Location }}</p>
+</div>
+<div class="col-lg-4" id="hosstkat">
+<p>Hossz: {{ program.Length }}</p>
+<p>Kategória: {{ program.Category }}</p>
+</div>
+</div>
+<p class="programszoveg">{{ program.Description }} {{ program.Description }} {{ program.Description }} {{ program.Description }} {{ program.Description }}</p>
+{% endblock %}

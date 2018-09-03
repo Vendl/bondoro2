@@ -1,0 +1,15 @@
+{% extends "posts/base.html" %}
+{% load static %}
+{% block body_block %}
+<h1>Programok</h1>
+<div class="row" id="programok">
+{% for program in programok %}
+<div class="col-lg-4" id="program">
+  <h5>{{ program.Date }}</h5>
+  <a href="{%  url 'posts:program_detail' program.id %}"><img src="{{ program.EventPic.url }}" class="img-thumbnail">
+  <h3 class="title">{{ program.Title }}</h3></a>
+  <p>{{ program.ShortDescription }}</p>
+</div>
+{% endfor %}
+</div>
+{% endblock %}
